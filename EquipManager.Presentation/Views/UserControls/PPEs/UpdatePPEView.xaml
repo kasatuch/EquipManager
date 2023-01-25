@@ -1,0 +1,217 @@
+﻿<UserControl
+    x:Class="EquipManager.Presentation.Views.UserControls.PPEs.UpdatePPEView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:EquipManager.Presentation.Views.UserControls.PPEs"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Background="Transparent"
+    mc:Ignorable="d">
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!--#region Top-->
+
+        <TextBlock
+            Grid.Row="0"
+            Margin="10"
+            FontSize="23"
+            Text="{StaticResource t_UpdatePPE}" />
+
+        <RadioButton
+            x:Name="ShiftButtonScroll"
+            HorizontalAlignment="Right"
+            Panel.ZIndex="1"
+            IsChecked="True">
+            <RadioButton.Style>
+                <Style BasedOn="{StaticResource c_ScrollViewRadioButtonStyle}" TargetType="RadioButton">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonTable, Path=IsChecked}" Value="true">
+                            <Setter Property="IsChecked" Value="False" />
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonTable, Path=IsChecked}" Value="False">
+                            <Setter Property="IsChecked" Value="True" />
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </RadioButton.Style>
+        </RadioButton>
+
+        <RadioButton
+            x:Name="ShiftButtonTable"
+            HorizontalAlignment="Right"
+            Panel.ZIndex="1">
+            <RadioButton.Style>
+                <Style BasedOn="{StaticResource c_TableViewRadioButtonStyle}" TargetType="RadioButton">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonScroll, Path=IsChecked}" Value="true">
+                            <Setter Property="IsChecked" Value="False" />
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonScroll, Path=IsChecked}" Value="False">
+                            <Setter Property="IsChecked" Value="True" />
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </RadioButton.Style>
+        </RadioButton>
+
+        <!--#endregion-->
+
+        <!--#region View-->
+
+        <Grid
+            x:Name="Table"
+            Grid.Row="1"
+            Margin="10">
+            <ListView
+                Name="ViewAllSuitsTable"
+                ItemsSource="{Binding PPEs}"
+                SelectedItem="{Binding PPE, Mode=TwoWay}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" />
+                        <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="{StaticResource t_PPE_Name}" />
+                        <GridViewColumn DisplayMemberBinding="{Binding UnitOfMeasurement}" Header="{StaticResource t_PPE_UnitOfMeasurement}" />
+                        <GridViewColumn DisplayMemberBinding="{Binding QuantityPerYear}" Header="{StaticResource t_PPE_QuantityPerYear}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Grid.Style>
+
+                <Style TargetType="Grid">
+
+                    <Style.Triggers>
+
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonScroll, Path=IsChecked}" Value="true">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonTable, Path=IsChecked}" Value="true">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+
+                    </Style.Triggers>
+
+                </Style>
+
+            </Grid.Style>
+
+        </Grid>
+
+        <!--#endregion-->
+
+        <!--#region Body-->
+
+        <Grid
+            x:Name="Body"
+            Grid.Row="1"
+            Margin="10">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="0.1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="20"
+                Text="{StaticResource t_InfoAboutPPE}" />
+
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Width="200"
+                Height="40"
+                Tag="{StaticResource t_PPE_Name}"
+                Text="{Binding PPE.Name}" />
+
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="2"
+                Width="200"
+                Height="40"
+                Tag="{StaticResource t_PPE_UnitOfMeasurement}"
+                Text="{Binding PPE.UnitOfMeasurement}" />
+
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Width="200"
+                Height="40"
+                Tag="{StaticResource t_PPE_QuantityPerYear}"
+                Text="{Binding PPE.QuantityPerYear}" />
+
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="2"
+                Width="200"
+                Height="40"
+                Tag="{StaticResource t_PPE_CertificateOfConformity}"
+                Text="{Binding PPE.CertificateOfConformity}" />
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Width="200"
+                Height="40"
+                Command="{Binding UpdatePPECommand}"
+                Content="{StaticResource t_Update}" />
+
+            <Grid.Style>
+
+                <Style TargetType="Grid">
+
+                    <Style.Triggers>
+
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonScroll, Path=IsChecked}" Value="true">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=ShiftButtonTable, Path=IsChecked}" Value="true">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+
+                    </Style.Triggers>
+
+                </Style>
+
+            </Grid.Style>
+
+        </Grid>
+
+        <!--#endregion-->
+
+    </Grid>
+
+</UserControl>

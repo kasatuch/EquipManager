@@ -1,0 +1,242 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="t_Main">Главная</v:String>
+
+    <v:String x:Key="t_View">Просмотр</v:String>
+
+    <v:String x:Key="t_Create">Создать</v:String>
+
+    <v:String x:Key="t_Update">Изменить</v:String>
+
+    <v:String x:Key="t_Delete">Удалить</v:String>
+
+    <v:String x:Key="t_Export">Экспортировать</v:String>
+
+    <v:String x:Key="t_Settings">Настройки</v:String>
+
+    <v:String x:Key="t_QuickActions">Быстрые действия</v:String>
+
+    <v:String x:Key="t_CreateEmployee">Создать сотрудника</v:String>
+
+    <v:String x:Key="t_CreatingEmployee">Создание сотрудника</v:String>
+
+    <v:String x:Key="t_GetStartedNow">Начните сейчас!</v:String>
+
+    <v:String x:Key="t_CreateContract">Создайте документ!</v:String>
+
+    <v:String x:Key="t_DeleteEmployee">Удалить сотрудника</v:String>
+
+    <v:String x:Key="t_UpdateEmployee">Редактировать сотрудника</v:String>
+
+    <v:String x:Key="t_ViewEmployee">Просмотр сотрудника</v:String>
+
+    <v:String x:Key="t_Employee">Сотрудник</v:String>
+
+    <v:String x:Key="t_PPE">СИЗ</v:String>
+
+    <v:String x:Key="t_Contract">Документ</v:String>
+
+    <v:String x:Key="t_ExportContract">Экспортируйте договор</v:String>
+
+    <v:String x:Key="t_ExportNow">Экспортируйте сейчас!</v:String>
+
+    <v:String x:Key="t_Theme">Тема</v:String>
+
+    <v:String x:Key="t_Language">Язык</v:String>
+
+    <v:String x:Key="t_DeletePPE">Удалить СИЗ</v:String>
+
+    <v:String x:Key="t_UpdatePPE">Редактировать СИЗ</v:String>
+
+    <v:String x:Key="t_CreatePPE">Создание СИЗ</v:String>
+
+    <v:String x:Key="t_ViewPPE">Просмотр СИЗ</v:String>
+
+    <v:String x:Key="t_ChoiceApplicationLanguage">Выберите язык приложения</v:String>
+
+    <v:String x:Key="t_ChoiceApplicationTheme">Выберите тему приложения</v:String>
+
+    <v:String x:Key="t_ThemeName">Название темы:</v:String>
+
+    <v:String x:Key="t_ChoiceEmployee">Выберите сотрудника</v:String>
+
+    <v:String x:Key="t_Private">Личное</v:String>
+
+    <v:String x:Key="t_Company">Компания</v:String>
+
+    <v:String x:Key="t_PhysicData">Физические данные</v:String>
+
+    <v:String x:Key="t_Cloth">Одежда</v:String>
+
+    <v:String x:Key="t_Employee_Name">Имя</v:String>
+
+    <v:String x:Key="t_Employee_Surname">Фамилия</v:String>
+
+    <v:String x:Key="t_Employee_Patronymic">Отчество</v:String>
+
+    <v:String x:Key="t_Employee_StructuralDivision">Структурное подразделение</v:String>
+
+    <v:String x:Key="t_Employee_Profession">Должность</v:String>
+
+    <v:String x:Key="t_Employee_DateOfEmployment">Дата трудоустройства</v:String>
+
+    <v:String x:Key="t_Employee_DateOfProfessionChange">Дата смены профессии</v:String>
+
+    <v:String x:Key="t_Employee_Height">Рост</v:String>
+
+    <v:String x:Key="t_Employee_Gender">Пол</v:String>
+
+    <v:String x:Key="t_SizeChart_ClothSize">Размер одежды</v:String>
+
+    <v:String x:Key="t_SizeChart_GazMaskSize">Размер противогаза</v:String>
+
+    <v:String x:Key="t_SizeChart_SleeveSize">Размер рукавиц</v:String>
+
+    <v:String x:Key="t_SizeChart_ShoesSize">Размер обуви</v:String>
+
+    <v:String x:Key="t_SizeChart_HeaddressSize">Размер головного убора</v:String>
+
+    <v:String x:Key="t_SizeChart_RespiratorSize">Размер респиратора</v:String>
+
+    <v:String x:Key="t_SizeChart_GloveSize">Размер перчаток</v:String>
+
+    <v:String x:Key="t_SizeChart_Cloth">Одежда</v:String>
+
+    <v:String x:Key="t_SizeChart_GazMask">Противогаз</v:String>
+
+    <v:String x:Key="t_SizeChart_Sleeve">Рукавицы</v:String>
+
+    <v:String x:Key="t_SizeChart_Shoes">Обувь</v:String>
+
+    <v:String x:Key="t_SizeChart_Headdress">Головной убор</v:String>
+
+    <v:String x:Key="t_SizeChart_Respirator">Респиратор</v:String>
+
+    <v:String x:Key="t_SizeChart_Glove">Перчатки</v:String>
+
+    <v:String x:Key="t_InfoAboutPPE">Информация о С.И.З.</v:String>
+
+    <v:String x:Key="t_ChoicePPE">Выберите С.И.З.</v:String>
+
+    <v:String x:Key="t_PPE_Name">Наименование</v:String>
+
+    <v:String x:Key="t_PPE_QuantityPerYear">Количество на год</v:String>
+
+    <v:String x:Key="t_PPE_UnitOfMeasurement">Единица измерения</v:String>
+
+    <v:String x:Key="t_PPE_CertificateOfConformity">Сертификат соответствия</v:String>
+
+    <v:String x:Key="t_SelectTheTabWithPersonalData">Выбрать вкладку с личными данными.</v:String>
+
+    <v:String x:Key="t_SelectTheTabWithCorporateData">Выбрать вкладку с корпоративными данными.</v:String>
+
+    <v:String x:Key="t_SelectTheTabWithPhysicalData">Выбрать вкладку с физическими данными.</v:String>
+
+    <v:String x:Key="t_SelectTheTabWithSizeTable">Выбрать вкладку с таблицей размеров.</v:String>
+
+    <v:String x:Key="t_HoverOverTheParameterToGetAHint">Наведите на параметр для получения подсказки.</v:String>
+
+    <v:String x:Key="t_NameEmployee">Имя сотрудника.</v:String>
+
+    <v:String x:Key="t_SurnameEmployee">Фамилия сотрудника.</v:String>
+
+    <v:String x:Key="t_PatronymicEmployee">Отчество сотрудника.</v:String>
+
+    <v:String x:Key="t_Employee_TabelNumber">Табельный номер.</v:String>
+
+    <v:String x:Key="t_TheEmployeesUniqueServiceNumber">Уникальный табельный номер сотрудника.</v:String>
+
+    <v:String x:Key="t_PrivateData">Личные данные.</v:String>
+
+    <v:String x:Key="t_TheDepartmentInWhichTheEmployeeWorks">Подразделение, в котором работает сотрудник.</v:String>
+
+    <v:String x:Key="t_ThePositionWhereTheEmployeeWorks">Должность, на которой работает сотрудник.</v:String>
+
+    <v:String x:Key="t_TheDateWhenTheEmployeeStartedWork">Дата, когда сотрудник начал работу.</v:String>
+
+    <v:String x:Key="t_TheDateWhenTheEmployeeTookOfficeForTheLastTime">Дата, когда сотрудник начал работу.</v:String>
+
+    <v:String x:Key="t_TheEmployeesHeightInCentimeters">Рост сотрудника в сантиметрах.</v:String>
+
+    <v:String x:Key="t_TheGenderOfTheEmployee">Половая принадлежность сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesClothes">Размер одежды сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesHeaddress">Размер головного убора сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesGazMask">Размер противогаза сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesRespiratorMask">Размер маски - респиратора сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesSleeve">Размер рукавиц сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesGlove">Размер перчаток сотрудника.</v:String>
+
+    <v:String x:Key="t_TheSizeOfTheEmployeesShoes">Размер обуви сотрудника.</v:String>
+
+    <v:String x:Key="t_SizeChart">Таблица размеров.</v:String>
+
+    <v:String x:Key="t_NamePPE">Название С.И.З.</v:String>
+
+    <v:String x:Key="t_Naming">Название</v:String>
+
+    <v:String x:Key="t_Quantity">Количество</v:String>
+
+    <v:String x:Key="t_TheNumberOfPPEInWarehouse">Количество С.И.З на складе.</v:String>
+
+    <v:String x:Key="t_Unit">Единица.</v:String>
+
+    <v:String x:Key="t_TheUnitOfMeasurementIsTheNumberOfPPE">Единица измерения кол-ва С.И.З.</v:String>
+
+    <v:String x:Key="t_Certificate">Сертификат</v:String>
+
+    <v:String x:Key="t_CertificateOfConformityOfPPE">Сертификат соответствия С.И.З.</v:String>
+
+    <v:String x:Key="t_InformationAboutPPE">Информация о С.И.З.</v:String>
+
+    <v:String x:Key="t_CreatePPEContract">Создание договора</v:String>
+
+    <v:String x:Key="t_DeletePPEContract">Удаление документа.</v:String>
+
+    <!--#region Messages-->
+
+    <v:String x:Key="tm_Success">Успех.</v:String>
+
+    <v:String x:Key="tm_Information">Информация.</v:String>
+
+    <v:String x:Key="tm_ValidationError">Ошибка валидации.</v:String>
+
+    <v:String x:Key="tm_EmployeeSuccessfullyCreated">Сотрудник успешно создан.</v:String>
+
+    <v:String x:Key="tm_EmployeeSuccessfullyDeleted">Сотрудник успешно удалён.</v:String>
+
+    <v:String x:Key="tm_EmployeeSuccessfullyUpdated">Сотрудник успешно изменён.</v:String>
+
+    <v:String x:Key="tm_PPESuccessfullyCreated">С.И.З. успешно создан.</v:String>
+
+    <v:String x:Key="tm_PPESuccessfullyDeleted">С.И.З. успешно удалён.</v:String>
+
+    <v:String x:Key="tm_PPESuccessfullyUpdated">С.И.З. успешно изменён.</v:String>
+
+    <v:String x:Key="t_TheContractHasBeenSuccessfullyCreated">Договор успешно создан.</v:String>
+
+    <v:String x:Key="tm_ContractSuccessfullyDeleted">Договор успешно удалён.</v:String>
+
+    <v:String x:Key="tm_ContractSuccessfullyExported">Договор успешно экспортирован.</v:String>
+
+    <v:String x:Key="tm_MinValue">Минимальное значение</v:String>
+
+    <v:String x:Key="tm_MaxValue">Максимальное значение</v:String>
+
+    <v:String x:Key="tm_ToApplyChangesYouNeedToRestartTheProgram">Для применения изменений необходимо перезапустить программу.</v:String>
+
+    <v:String x:Key="tm_PPEIsNotSelected">Не выбран С.И.З.</v:String>
+
+    <v:String x:Key="tm_EmployeeIsNotSelected">Не выбран сотрудник.</v:String>
+
+    <!--#endregion-->
+
+</ResourceDictionary>
